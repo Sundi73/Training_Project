@@ -67,16 +67,15 @@ public class FileOperation {
 		return fileListNames;
 	}
 
-	public static void createFile(String newFileToAdd, Scanner scan) {
-		FileOperation.createMainFolderIfNotPresent("main");
-		Path pathToFile = Paths.get("J:\\" + newFileToAdd);
+	public static void createFile(String newFileToAdd) {
+		Path pathToFile = Paths.get("main/"+newFileToAdd);
 		try {
 			Files.createDirectories(pathToFile.getParent());
 			Files.createFile(pathToFile);
 			System.out.println(newFileToAdd + " created Successfully");
 			
 		}catch(IOException e) {
-			System.out.println("Failedto create file "+ newFileToAdd);
+			System.out.println("Failed to create file "+ newFileToAdd);
 			System.out.println(e.getClass().getName());
 		}
 		

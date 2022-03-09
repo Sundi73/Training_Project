@@ -53,9 +53,11 @@ public class HandleOptions {
 				System.out.println("Enter the file name to add in main folder");
 				String newFileToAdd = scan.next();
 				
-				FileOperation.createFile(newFileToAdd, scan);
-				MainMenuOptions.displayMenuOption();
+				FileOperation.createFile(newFileToAdd);
+				
+				HandleOptions.handleMenuOption();
 				break;
+				
 				
 			case 2 :
 				System.out.println("Enter name of file to delete");
@@ -77,20 +79,25 @@ public class HandleOptions {
 						FileOperation.deleteFileRecursively(path);
 					}				
 				}
-				break;
 				
+				HandleOptions.welcomeScreenInput();
+				
+				break;
 			case 3:
 				System.out.println("Enter the name of file to be search");
 				String fileName = scan.next();
 				
 				FileOperation.createMainFolderIfNotPresent(fileName);
 				FileOperation.fileLocation(fileName, "main");
-				MainMenuOptions.displayMenuOption();
+				
+				HandleOptions.welcomeScreenInput();
 				
 				break;
 				
 			case 4:
-				return;
+				
+				HandleOptions.welcomeScreenInput();
+				break;
 				
 			case 5:
 				System.out.println("Program Exited Successfully");
