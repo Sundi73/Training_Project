@@ -69,13 +69,11 @@ public class FileOperation {
 
 	public static void createFile(String newFileToAdd, Scanner scan) {
 		FileOperation.createMainFolderIfNotPresent("main");
-		Path pathToFile = Paths.get("j:\\" + newFileToAdd);
+		Path pathToFile = Paths.get("J:\\" + newFileToAdd);
 		try {
 			Files.createDirectories(pathToFile.getParent());
 			Files.createFile(pathToFile);
 			System.out.println(newFileToAdd + " created Successfully");
-			
-			System.out.println("Would you like to add some content ");
 			
 		}catch(IOException e) {
 			System.out.println("Failedto create file "+ newFileToAdd);
@@ -90,7 +88,7 @@ public class FileOperation {
 		FileOperation.searchFileRecursively(path, fileName, fileListNames);
 
 		if (fileListNames.isEmpty()) {
-			System.out.println("\n\n***** Couldn't find any file with given file name \"" + fileName + "\" *****\n\n");
+			System.out.println("\n\n Couldn't find any file with given file name");
 		} else {
 			System.out.println("\n\nFound file at below location(s):");
 

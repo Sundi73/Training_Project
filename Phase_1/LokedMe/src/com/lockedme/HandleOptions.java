@@ -18,7 +18,14 @@ public class HandleOptions {
 					break;
 				case 2:
 
-					//
+				HandleOptions.handleMenuOption();
+				break;
+				
+				case 3:
+					System.out.println("Program Exited Successfully...");
+					work = false;
+					scan.close();
+					System.exit(0);
 					
 				default:
 					System.out.println();
@@ -47,13 +54,14 @@ public class HandleOptions {
 				String newFileToAdd = scan.next();
 				
 				FileOperation.createFile(newFileToAdd, scan);
+				MainMenuOptions.displayMenuOption();
 				break;
 				
 			case 2 :
 				System.out.println("Enter name of file to delete");
 				String fileToDelete = scan.next();
 				
-				FileOperation.createMainFolderIfNotPresent("main");
+				//FileOperation.createMainFolderIfNotPresent("main");
 				List<String> filesToDelete = FileOperation.fileLocation(fileToDelete, "main");
 				
 				String deletionMsg = "\n Select index of file to delete."
@@ -77,24 +85,26 @@ public class HandleOptions {
 				
 				FileOperation.createMainFolderIfNotPresent(fileName);
 				FileOperation.fileLocation(fileName, "main");
-			}
+				MainMenuOptions.displayMenuOption();
+				
+				break;
+				
+			case 4:
+				return;
+				
+			case 5:
+				System.out.println("Program Exited Successfully");
+				work = false;
+				scan.close();
+				System.exit(0);
+				
+			default : 
+				System.out.println("Please select valid option from above");
+		}
 			}catch(Exception e) {
 			System.out.println(e.getClass().getName());
 			handleMenuOption();
-		}
-		
-		
-		
-		
+		}while(work == true);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

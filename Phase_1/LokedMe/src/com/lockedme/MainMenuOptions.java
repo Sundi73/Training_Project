@@ -28,7 +28,7 @@ public class MainMenuOptions {
 	public static void displayMenuOption() {
 		
 		String menu = "\n\n -------Select any option number and press enter------\n\n"+
-		"1. Add file to main folder.\n"+"2.Delete file from main folder.\n"+
+		"1. Add file to main folder.\n"+"2. Delete file from main folder.\n"+
 				"3. Search for file from main folder.\n"+"4. Previous Menu.\n"+
 		"5. Exit Program.";
 		
