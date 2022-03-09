@@ -28,7 +28,8 @@ public class HandleOptions {
 					System.exit(0);
 					
 				default:
-					System.out.println();
+					System.out.println("Please enter valid option...");
+					HandleOptions.welcomeScreenInput();
 				
 				}
 				
@@ -65,11 +66,7 @@ public class HandleOptions {
 				
 				//FileOperation.createMainFolderIfNotPresent("main");
 				List<String> filesToDelete = FileOperation.fileLocation(fileToDelete, "main");
-				
-				String deletionMsg = "\n Select index of file to delete."
-				+"\n Enter 0 to delete all file";
-				System.out.println(deletionMsg);
-				
+			
 				int index = scan.nextInt();
 				
 				if(index!=0) {
@@ -80,7 +77,7 @@ public class HandleOptions {
 					}				
 				}
 				
-				HandleOptions.welcomeScreenInput();
+				HandleOptions.handleMenuOption();
 				
 				break;
 			case 3:

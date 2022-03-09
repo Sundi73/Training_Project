@@ -129,7 +129,7 @@ public class FileOperation {
 		if (files != null && files.length > 0) {
 			for (File file : files) {
 
-				String fileName = file.getName() + " at " + file.getParent();
+				String fileName = file.getName();
 				if (file.isDirectory()) {
 					deleteFileRecursively(file.getAbsolutePath());
 				}
