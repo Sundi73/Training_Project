@@ -82,7 +82,7 @@ public class HandleOptions {
 				break;
 			case 3:
 				System.out.println("Enter the name of file to be search");
-				String fileName = scan.next();
+				String fileName = scan.next(); 
 				
 				FileOperation.createMainFolderIfNotPresent(fileName);
 				FileOperation.fileLocation(fileName, "main");
