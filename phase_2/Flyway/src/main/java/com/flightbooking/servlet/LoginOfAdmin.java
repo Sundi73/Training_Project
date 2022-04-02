@@ -39,7 +39,8 @@ import  com.flightbooking.database.ConnectionUtil;
 					}
 
 				}  catch  (ClassNotFoundException  |  SQLException  e)  {
-					//  TODO  Auto-generated  catch  block e.printStackTrace();
+					
+					e.printStackTrace();
 				}
 
 		}
