@@ -8,8 +8,11 @@ pageEncoding="ISO-8859-1"%>
 </head>
 <body >
 <br>
+
 <a  href=HomePage.jsp  style="color:black;text-decoration:none  ;font-size:35px;font- weight:bold;">Flight  Booking</a>
 <br><br>
+
+<h2>Reset Password</h2><br><br>
 <div  style="border:3px  solid  black;width:25%;border-radius:20px;padding:20px" align="center">
 <form  action=ForgotPassword  method=post>
 <label  for=email>Email  :-</label>  <input  type="email"  name=email  id=email
