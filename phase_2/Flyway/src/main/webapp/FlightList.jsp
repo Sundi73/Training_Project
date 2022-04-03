@@ -30,7 +30,7 @@ if(flights!=null){
 
 
 <%
-
+for(String[]  flight:flights){
 %>
 
 <th>Name</th>
@@ -41,7 +41,7 @@ if(flights!=null){
 
 
 
-for(String[]  flight:flights){
+
 
 
 <tr>
