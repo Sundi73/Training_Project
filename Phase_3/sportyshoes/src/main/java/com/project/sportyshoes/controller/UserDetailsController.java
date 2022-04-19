@@ -16,13 +16,7 @@ import com.project.sportyshoes.service.UserDetailsService;
 public class UserDetailsController {
 	@Autowired
 	UserDetailsService userservice;
-	//@GetMapping("/list")
-	//public List<UserDetails> getUserDetails()
-	//{
-	 //List<UserDetails> listuser = new ArrayList<UserDetails>();
-		 //listuser= userservice.getUsers();
-		// return listuser;
-//}
+	
 @GetMapping("/index")
 	public String viewUserDetails(Model model)
 	{
@@ -31,14 +25,8 @@ List<UserDetails> listUsers= userservice.listAll();
 		model.addAttribute("listUsers",listUsers);
 		return "/index";
 	}
-//	@GetMapping("/find")
-//	public List<UserDetails> findusername(@RequestParam("username")  String username)
-//	{
-//		List<UserDetails> searchuser =new ArrayList<UserDetails>();
-//		searchuser = userservice.get(username);
-//		System.out.println("user"+ searchuser);
-//		return searchuser;
-//	}
+
+
 @GetMapping("/user/{username}")
 	public String findUserName(@PathVariable(name="username")String username)
 	{	

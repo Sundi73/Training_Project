@@ -10,8 +10,8 @@ import lombok.val;
 public interface LoginRepository extends JpaRepository<Login, Long> {
 	Login findByUsernameAndPassword(String username, String password);
 	Login findByUsername(String username);
-	//Login findByEmail(String emailId);
-	//Login findByResetPassword(String resetPassword);
+	
+	
 	@Modifying
 	@Query("update Login log set log.password = :password where log.id = :id")
 	void changePassword(@Param(value="password") String password, @Param(value = "id") Long id);

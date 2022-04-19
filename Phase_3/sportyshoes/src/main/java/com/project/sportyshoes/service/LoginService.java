@@ -27,22 +27,4 @@ public class LoginService{
 		return null;
 	}
 }
-	// Login login=repo.findByEmail(email); 
-		// if(login != null)
-		 //{
-			// login.setResetPassword(resetPassword);
-			 //repo.save(login);
-		 //}
-		 //else {
-			//System.out.println("couldnot find the emailid");
-		//}
-	   // }
-	    //catch (Exception e) {
-		//e.printStackTrace(e.getMessage());
-	    //}
-    //}
-	 //public Login getByResetPassword(String resetPassword)
-	//{	
-	  // return repo.findByResetPassword(resetPassword);
-	//}  		 	   		
-//}
+	

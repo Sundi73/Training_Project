@@ -42,7 +42,7 @@ return "invalid_credentials";
 @RequestMapping("/logout")
 public String logoutDo()
 	{
-		return "conform_logout";
+		return "confirm_logout";
 	}
 	
 	

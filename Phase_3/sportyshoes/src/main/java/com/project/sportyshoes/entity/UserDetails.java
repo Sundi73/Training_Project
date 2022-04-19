@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+
 @Entity(name = "userdetails")
 @Table(name="userdetails")
 public class UserDetails extends BaseEntity {
@@ -17,10 +19,13 @@ public class UserDetails extends BaseEntity {
 	public String productPerchased;
 	public Date perchaseDate;
 	public String category;
+	
+	
 	public UserDetails() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
+	
+	
 	public UserDetails(long userId, String username, String emailId, String phone, String productPerchased,
 			Date perchaseDate, String category) {
 		super();
