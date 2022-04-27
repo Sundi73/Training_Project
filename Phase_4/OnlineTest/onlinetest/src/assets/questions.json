@@ -1,0 +1,178 @@
+{
+    "questions": [{
+            "questionText": "How to enable annotations in Spring?",
+            "options": [{
+                    "text": "Add <annotation-context: config /> to the bean configuration."
+                   
+                },
+                {
+                    "text": "Add <annotation-config /> to the bean configuration."
+                },
+                {
+                    "text": "Add <annotation-context-config /> to the bean configuration."
+                },
+                {
+                    "text": "Add <contexte: annotation-config /> to the bean configuration.",
+                    "correct": true
+                }
+            ],
+            "explanation": "Add <contexte: annotation-config /> to the bean configuration to enable the use of annotations."
+        },
+        {
+            "questionText": "Which ORM does Spring support?",
+            "options": [{
+                    "text": "Hibernate."
+                },
+                {
+                    "text": "iBatis."
+                },
+                {
+                    "text": "JPA."
+                },
+                {
+                    "text": "All the answers are true.",
+                    "correct": true
+                }
+            ],
+            "explanation": "Spring supports most ORMs, including Hibernate, JDO, TopLink, iBATIS and JPA."
+        },
+        {
+            "questionText": "The ________ class can be extended to create a custom event in Spring.",
+            "options": [{
+                    "text": "SpringEvent."
+                },
+                {
+                    "text": "ApplicationEvent.",
+                    "correct": true
+                },
+                {
+                    "text": "Event."
+                },
+                {
+                    "text": "None of the above."
+                }
+            ],
+            "explanation": "ApplicationEvent is used to create custom events."
+        },
+        {
+            "questionText": "How to use <ref> tag in the Spring framework?",
+            "options": [{
+                    "text": "<ref> tag is used with the bean ID.",
+                    "correct": true
+                },
+                {
+                    "text": "<ref> tag is used with a String value."
+                   
+                },
+                {
+                    "text": "Both A and B are true."
+                },
+                {
+                    "text": "None of the above."
+                }
+            ],
+            "explanation": "In Spring, we must use the <ref> tag to inform the Spring container of the objects dependency."
+        },
+        {
+            "questionText": " How to define a bean in Spring?",
+            "options": [{
+                    "text": "Use <property /> or <constructor-arg />.",
+                    "correct": true
+                },
+                {
+                    "text": "Use only the following <property />."
+                },
+                {
+                    "text": "Use only the following <constructor-arg />."
+                },
+                {
+                    "text": "None of the above."
+                }
+            ],
+            "explanation": " Property or constructor-arg any one can you used to define bean."
+        },
+        {
+            "questionText": "Which property is replaced by p-namespace in the Spring framewrok?",
+            "options": [{
+                    "text": "<property />."
+                },
+                {
+                    "text": "<constructor-arg />.",
+                    "correct":true
+                }              
+            ],
+            "explanation": "In spring, p-namespace is an XML shortcut to inject a dependency into the bean. p-namespace replaces the <property> tag of XML."
+        },
+        {
+            "questionText": "What is the default scope of the beans?",
+            "options": [{
+                    "text": "Prototype."
+                },
+                {
+                    "text": "Singleton.",
+                    "correct": true
+                },
+                {
+                    "text": "Request."
+                },
+                {
+                    "text": "Session."
+                }
+            ],
+            "explanation": "Singleton is the default scope of the beans."
+        },
+        {
+            "questionText": "Which method is used to process bean before initialization callback?",
+            "options": [{
+                    "text": "postProcessAfterInitialization."
+                },
+                {
+                    "text": "Scope."
+                },
+                {
+                    "text": "postProcessBeforeInitialization.",
+                    "correct":true
+                },
+                {
+                    "text": "It's own constructor."
+                }
+            ],
+            "explanation": "postProcessBeforeInitialization() method is used to process bean before initialization callback."
+        },
+        {
+            "questionText": "Which tag is also allowed by static field?",
+            "options": [{
+                    "text": "util:constant.",
+                    "correct": true
+                },
+                {
+                    "text": "List."
+                },
+                {
+                    "text": "Constructor-args."
+                },
+                {
+                    "text": "Set."
+                }
+            ],
+            "explanation": "util:constant tag is also allowed by static field."
+        },
+        {
+            "questionText": "Spring EJB Support Classes for Different Types of EJB",
+            "options": [{
+                "text":"stateful session beans (SFSBs)"
+            },
+            {
+                "text":"message-driven beans (MDBs)"
+            },
+            {
+                "text":"stateless session beans (SLSBs)"
+            },
+            {
+                "text":"AbstractStatefulSessionBean",
+                "correct":true
+            }        
+        ]
+        }
+    ]
+}
