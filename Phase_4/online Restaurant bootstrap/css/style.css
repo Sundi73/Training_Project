@@ -1,0 +1,8 @@
+#home{
+    background: url('/image/bg2.jpg') rgba(0,0,0,0.7) ;
+    background-blend-mode: overlay;
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
